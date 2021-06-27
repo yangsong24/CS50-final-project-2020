@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Appointment Iot Platform</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="/static/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js"></script>
+
+        <div class= "jumbotron jumbotron-fluid" style="background-color:#66ff33">
+        <h1>PATIENT CALLER</h1>
+        </div>
+
+    </head>
+    <body>
+
+        <header class="fixed-top">
+            <nav>
+                    <form method ="post" action="/">
+
+                          <button type="submit" name="device" value="device">Device</button>
+                          <button type="submit" name="home" value="home">Home</button>
+                    </form>
+            </nav>
+        </header>
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+
+    <div class="div1">
+        {% block div1 %}{% endblock %}
+    </div>
+
+    </body>
+</html>
